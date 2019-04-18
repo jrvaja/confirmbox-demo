@@ -1,0 +1,8 @@
+<ul class="list-group">
+  {{#each tasks as |task|}}
+    <Task @task={{task}}></Task>
+  {{/each}}
+</ul>
+<Confirmbox @activator="removeTask" @title="Delete Task" @text="Are you sure?" @confirmButtonText="Delete Task"
+  @cancelButtonText="Cancel" @confirmButtonClass="btn-danger" @showCancelButton @onConfirm={{action "deleteTask"}}
+  @onCancel={{action "closeConfirmbox"}} />

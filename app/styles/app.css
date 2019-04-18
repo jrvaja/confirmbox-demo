@@ -1,0 +1,16 @@
+@import url('//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+.demo span, .demo button{
+  font-size:  14px;
+}
+
+.confirmation div{
+  font-size:  18px;
+}
+
+.confirmation button{
+  font-size:  14px;
+}
+
+.confirmation p{
+  font-size:  14px;
+}

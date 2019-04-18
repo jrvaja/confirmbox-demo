@@ -1,0 +1,8 @@
+<ul class="list-group">
+  {{#each posts as |post|}}
+    <Post @post={{post}}></Post>
+  {{/each}}
+</ul>
+<Confirmbox @activator="deletePost" @title="Delete Post" @text="Are you sure?" @confirmButtonText="Confirm"
+  @cancelButtonText="Cancel" @confirmButtonClass="btn-danger" @showCancelButton @onConfirm={{action "deletePost"}}
+  @onCancel={{action "closeConfirmbox"}} />

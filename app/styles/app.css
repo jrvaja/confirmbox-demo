@@ -14,3 +14,7 @@
 .confirmation p{
   font-size:  14px;
 }
+
+.inline-block {
+  display: inline-block;
+}
